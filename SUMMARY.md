@@ -15,4 +15,10 @@
     * [radio 怎么分组](html/Q11.md)
     * [placeholder 有什么用](html/Q12.md)
     * [type=hidden 隐藏域的作用](html/Q13.md)
+* [计算机基础](computer-basics/README.md)
+    * [从 URL 输入到页面展现发生了什么](computer-basics/Q1.md)
+    * [markdown 的简单介绍](computer-basics/Q2.md)
+    * [Git 的基本命令](computer-basics/Q3.md)
+    * [Linux 基本命令行](computer-basics/Q4.md)
+    * [vim 的使用介绍](computer-basics/Q5.md)
 
