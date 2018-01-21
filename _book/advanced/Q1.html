@@ -1,0 +1,814 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>JS 面向对象、原型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Q2.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../beginner/">
+            
+                <a href="../beginner/">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../beginner/Q1.html">
+            
+                <a href="../beginner/Q1.html">
+            
+                    
+                    Linux 命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../beginner/Q2.html">
+            
+                <a href="../beginner/Q2.html">
+            
+                    
+                    Git 与 GitHub 的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../beginner/Q3.html">
+            
+                <a href="../beginner/Q3.html">
+            
+                    
+                    HTML 标签介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../beginner/Q4.html">
+            
+                <a href="../beginner/Q4.html">
+            
+                    
+                    Form 表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../beginner/Q5.html">
+            
+                <a href="../beginner/Q5.html">
+            
+                    
+                    CSS 是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../beginner/Q6.html">
+            
+                <a href="../beginner/Q6.html">
+            
+                    
+                    CSS 选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../beginner/Q7.html">
+            
+                <a href="../beginner/Q7.html">
+            
+                    
+                    CSS 常见样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../beginner/Q8.html">
+            
+                <a href="../beginner/Q8.html">
+            
+                    
+                    CSS 背景、行高、盒模型、字体图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../beginner/Q9.html">
+            
+                <a href="../beginner/Q9.html">
+            
+                    
+                    浮动、定位、BFC、边距合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../beginner/Q10.html">
+            
+                <a href="../beginner/Q10.html">
+            
+                    
+                    CSS 单栏、双栏、三栏、圣杯、双飞翼布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../beginner/Q11.html">
+            
+                <a href="../beginner/Q11.html">
+            
+                    
+                    浏览器兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../beginner/Q12.html">
+            
+                <a href="../beginner/Q12.html">
+            
+                    
+                    CSS 编码规范、垂直居中、伪类和伪元素系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../lntermediate/">
+            
+                <a href="../lntermediate/">
+            
+                    
+                    进阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../lntermediate/Q1.html">
+            
+                <a href="../lntermediate/Q1.html">
+            
+                    
+                    浏览器如何渲染页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../lntermediate/Q2.html">
+            
+                <a href="../lntermediate/Q2.html">
+            
+                    
+                    JS 运算符、运算符优先级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../lntermediate/Q3.html">
+            
+                <a href="../lntermediate/Q3.html">
+            
+                    
+                    JS 函数声明、函数表达式、声明前置、作用域、作用域链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../lntermediate/Q4.html">
+            
+                <a href="../lntermediate/Q4.html">
+            
+                    
+                    JS 引用类型、对象深拷贝和浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../lntermediate/Q5.html">
+            
+                <a href="../lntermediate/Q5.html">
+            
+                    
+                    JS 字符串，JSON 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../lntermediate/Q6.html">
+            
+                <a href="../lntermediate/Q6.html">
+            
+                    
+                    JS 数组、Math 对象、日期函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../lntermediate/Q7.html">
+            
+                <a href="../lntermediate/Q7.html">
+            
+                    
+                    JS 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../lntermediate/Q8.html">
+            
+                <a href="../lntermediate/Q8.html">
+            
+                    
+                    DOM 的元素选取、增删改查、属性操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../lntermediate/Q9.html">
+            
+                <a href="../lntermediate/Q9.html">
+            
+                    
+                    事件模型、事件冒泡、事件捕获、事件代理、阻止默认事件、事件兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../lntermediate/Q10.html">
+            
+                <a href="../lntermediate/Q10.html">
+            
+                    
+                    闭包、定时器的使用、BOM 相关 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../lntermediate/Q11.html">
+            
+                <a href="../lntermediate/Q11.html">
+            
+                    
+                    ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../lntermediate/Q12.html">
+            
+                <a href="../lntermediate/Q12.html">
+            
+                    
+                    跨域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../lntermediate/Q13.html">
+            
+                <a href="../lntermediate/Q13.html">
+            
+                    
+                    jQuery选择器、Dom操作、样式、事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../lntermediate/Q14.html">
+            
+                <a href="../lntermediate/Q14.html">
+            
+                    
+                    Query常见操作、jQuery ajax使用、jQuery 源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="Q1.html">
+            
+                <a href="Q1.html">
+            
+                    
+                    JS 面向对象、原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="Q2.html">
+            
+                <a href="Q2.html">
+            
+                    
+                    this、原型链、继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="Q3.html">
+            
+                <a href="Q3.html">
+            
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="Q4.html">
+            
+                <a href="Q4.html">
+            
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="Q5.html">
+            
+                <a href="Q5.html">
+            
+                    
+                    常见设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="Q6.html">
+            
+                <a href="Q6.html">
+            
+                    
+                    HTML5 CSS3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="Q7.html">
+            
+                <a href="Q7.html">
+            
+                    
+                    媒体查询 栅格系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >JS 面向对象、原型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="js-&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x3001;&#x539F;&#x578B;">JS &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x3001;&#x539F;&#x578B;</h1>
+<h2 id="&#x95EE;&#x9898;1&#xFF1A;-oop-&#x6307;&#x4EC0;&#x4E48;&#xFF1F;&#x6709;&#x54EA;&#x4E9B;&#x7279;&#x6027;"><strong>&#x95EE;&#x9898;1&#xFF1A;</strong> OOP &#x6307;&#x4EC0;&#x4E48;&#xFF1F;&#x6709;&#x54EA;&#x4E9B;&#x7279;&#x6027;</h2>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript" target="_blank">JavaScript&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7B80;&#x4ECB;</a></p>
+<p>&#x201C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x201D;&#xFF08;Object Oriented Programming&#xFF0C;&#x7F29;&#x5199;&#x4E3A;OOP&#xFF09;&#x662F;&#x76EE;&#x524D;&#x4E3B;&#x6D41;&#x7684;&#x7F16;&#x7A0B;&#x8303;&#x5F0F;&#x3002;&#x5B83;&#x7684;&#x6838;&#x5FC3;&#x601D;&#x60F3;&#x662F;&#x5C06;&#x771F;&#x5B9E;&#x4E16;&#x754C;&#x4E2D;&#x5404;&#x79CD;&#x590D;&#x6742;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x62BD;&#x8C61;&#x4E3A;&#x4E00;&#x4E2A;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x7136;&#x540E;&#x7531;&#x5BF9;&#x8C61;&#x4E4B;&#x95F4;&#x7684;&#x5206;&#x5DE5;&#x4E0E;&#x5408;&#x4F5C;&#xFF0C;&#x5B8C;&#x6210;&#x5BF9;&#x771F;&#x5B9E;&#x4E16;&#x754C;&#x7684;&#x6A21;&#x62DF;&#x3002;</p>
+<p>&#x4F20;&#x7EDF;&#x7684;&#x8FC7;&#x7A0B;&#x5F0F;&#x7F16;&#x7A0B;&#xFF08;procedural programming&#xFF09;&#x7531;&#x4E00;&#x7CFB;&#x5217;&#x51FD;&#x6570;&#x6216;&#x4E00;&#x7CFB;&#x5217;&#x6307;&#x4EE4;&#x7EC4;&#x6210;&#xFF0C;&#x800C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x7684;&#x7A0B;&#x5E8F;&#x7531;&#x4E00;&#x7CFB;&#x5217;&#x5BF9;&#x8C61;&#x7EC4;&#x6210;&#x3002;&#x6BCF;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x529F;&#x80FD;&#x4E2D;&#x5FC3;&#xFF0C;&#x5177;&#x6709;&#x660E;&#x786E;&#x5206;&#x5DE5;&#xFF0C;&#x53EF;&#x4EE5;&#x5B8C;&#x6210;&#x63A5;&#x53D7;&#x4FE1;&#x606F;&#x3001;&#x5904;&#x7406;&#x6570;&#x636E;&#x3001;&#x53D1;&#x51FA;&#x4FE1;&#x606F;&#x7B49;&#x4EFB;&#x52A1;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7F16;&#x7A0B;&#x5177;&#x6709;&#x7075;&#x6D3B;&#x6027;&#x3001;&#x4EE3;&#x7801;&#x7684;&#x53EF;&#x91CD;&#x7528;&#x6027;&#x3001;&#x6A21;&#x5757;&#x6027;&#x7B49;&#x7279;&#x70B9;&#xFF0C;&#x5BB9;&#x6613;&#x7EF4;&#x62A4;&#x548C;&#x5F00;&#x53D1;&#xFF0C;&#x975E;&#x5E38;&#x9002;&#x5408;&#x591A;&#x4EBA;&#x5408;&#x4F5C;&#x7684;&#x5927;&#x578B;&#x8F6F;&#x4EF6;&#x9879;&#x76EE;&#x3002;</p>
+<p><strong>OPP&#x7684;&#x7279;&#x6027;&#xFF1A;&#x7EE7;&#x627F;&#x6027;&#xFF0C;&#x5C01;&#x88C5;&#x6027;&#xFF0C;&#x591A;&#x6001;&#x6027;</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> Person = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name,age</span>)</span>{
+    <span class="hljs-keyword">this</span>.name = name;
+    <span class="hljs-keyword">this</span>.age = age;
+}
+Person.prototype.sayHello =  <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello&apos;</span>);
+}
+   <span class="hljs-keyword">var</span> frankie = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">&apos;frankie&apos;</span>,<span class="hljs-number">21</span>);
+   frankie.sayHello();
+</code></pre>
+<ul>
+<li><p>&#x7EE7;&#x627F;&#x6027;&#xFF1A;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x7EE7;&#x627F;&#x7236;&#x7C7B;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x4F8B;&#x5982;&#x65B0;&#x751F;&#x4EBA;&#x7C7B;&#x4F1A;&#x7EE7;&#x627F;&#x4EBA;&#x7C7B;&#x7684;&#x4E00;&#x822C;&#x7279;&#x5F81;&#x3002;</p>
+<p><code>frankie</code>&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x672C;&#x8EAB;&#x6CA1;&#x6709;&#x5B9A;&#x4E49;<code>sayHello</code>&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;<code>frankie</code>&#x662F;&#x6784;&#x9020;&#x6570;<code>Person</code>&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x7EE7;&#x627F;<code>Person</code>&#x5B58;&#x653E;&#x5728;<code>prototype</code>&#x5BF9;&#x8C61;&#x4E2D;&#x7684;&#x5171;&#x6709;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x8C03;&#x7528;<code>sayHello</code>&#x3002;</p>
+</li>
+<li><p>&#x5C01;&#x88C5;&#x6027;&#xFF1A;&#x4E00;&#x79CD;&#x628A;&#x6570;&#x636E;&#x548C;&#x65B9;&#x6CD5;&#x7ED1;&#x5B9A;&#x5728;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#x7684;&#x65B9;&#x6CD5;</p>
+<p>&#x4E0A;&#x9762;&#x4F8B;&#x5B50;&#x867D;&#x7136;<code>frankie</code>&#x4E0D;&#x77E5;&#x9053;<code>sayHello</code>&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x662F;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#xFF0C;&#x4F46;&#x662F;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5DF2;&#x7ECF;&#x5C01;&#x88C5;&#x5728;&#x6784;&#x9020;&#x51FD;&#x6570;<code>Person</code>&#x7684;<code>prototype</code>&#x539F;&#x578B;&#x5BF9;&#x8C61;&#x4E2D;&#x4E86;&#x3002;</p>
+</li>
+<li><p>&#x591A;&#x6001;&#x6027;:&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x76F8;&#x540C;&#x7684;&#x5C5E;&#x6027;&#x6216;&#x65B9;&#x6CD5;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Man</span>(<span class="hljs-params"></span>)</span>{}
+Man.prototype.cry = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;wow&apos;</span>)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Woman</span>(<span class="hljs-params"></span>)</span>{}
+Lady.prototype.cry = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;wu&apos;</span>)
+}
+
+<span class="hljs-keyword">var</span> stepen = <span class="hljs-keyword">new</span> Man()
+<span class="hljs-keyword">var</span> kate = <span class="hljs-keyword">new</span> Woman()
+
+stepen.cry()
+kate.cry()
+</code></pre>
+</li>
+</ul>
+<h2 id="&#x95EE;&#x9898;2&#xFF1A;-&#x5982;&#x4F55;&#x901A;&#x8FC7;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x62E5;&#x6709;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x5BF9;&#x8C61;"><strong>&#x95EE;&#x9898;2&#xFF1A;</strong> &#x5982;&#x4F55;&#x901A;&#x8FC7;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x62E5;&#x6709;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x5BF9;&#x8C61;?</h2>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> Person = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name,age</span>)</span>{
+  <span class="hljs-keyword">this</span>.name = name
+  <span class="hljs-keyword">this</span>.age = age
+}
+person.prototype.sayHello = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello&apos;</span> + <span class="hljs-keyword">this</span>.name)
+}
+ <span class="hljs-keyword">var</span> frankie = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">&apos;frankie&apos;</span>,<span class="hljs-number">21</span>)
+ frankie.sayHello()
+</code></pre>
+<h2 id="&#x95EE;&#x9898;3&#xFF1A;-prototype-&#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x6709;&#x4EC0;&#x4E48;&#x7279;&#x6027;"><strong>&#x95EE;&#x9898;3&#xFF1A;</strong> prototype &#x662F;&#x4EC0;&#x4E48;&#xFF1F;&#x6709;&#x4EC0;&#x4E48;&#x7279;&#x6027;</h2>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype" target="_blank">Object.prototype</a></p>
+<p>JavaScript&#x4E2D;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x662F; <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank"><code>Object</code></a> &#x7684;&#x5B9E;&#x4F8B;; &#x6240;&#x6709;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x7EE7;&#x627F;&#x4E86;<code>Object.prototype&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF0C;</code>&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x88AB;&#x8986;&#x76D6;&#xFF08;&#x9664;&#x4E86;&#x4EE5;null&#x4E3A;&#x539F;&#x578B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5982; <code>Object.create(null)&#xFF09;&#x3002;</code>&#x4F8B;&#x5982;&#xFF0C;&#x65B0;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x539F;&#x578B;&#x8986;&#x76D6;&#x539F;&#x6765;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x539F;&#x578B;&#xFF0C;&#x63D0;&#x4F9B;&#x5B83;&#x4EEC;&#x81EA;&#x5DF1;&#x7684; <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/toString" target="_blank"><code>toString()</code></a> &#x65B9;&#x6CD5;.&#x3002;&#x5BF9;&#x8C61;&#x7684;&#x539F;&#x578B;&#x7684;&#x6539;&#x53D8;&#x4F1A;&#x4F20;&#x64AD;&#x5230;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x4E0A;&#xFF0C;&#x9664;&#x975E;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#x88AB;&#x5176;&#x4ED6;&#x5BF9;&#x539F;&#x578B;&#x94FE;&#x66F4;&#x91CC;&#x5C42;&#x7684;&#x6539;&#x52A8;&#x6240;&#x8986;&#x76D6;&#x3002;</p>
+<h2 id="&#x95EE;&#x9898;4&#xFF1A;&#x753B;&#x51FA;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x7684;&#x539F;&#x578B;&#x56FE;"><strong>&#x95EE;&#x9898;4&#xFF1A;</strong>&#x753B;&#x51FA;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x7684;&#x539F;&#x578B;&#x56FE;</h2>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">People</span> (<span class="hljs-params">name</span>)</span>{
+  <span class="hljs-keyword">this</span>.name = name
+  <span class="hljs-keyword">this</span>.sayName = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;my name is:&apos;</span> + <span class="hljs-keyword">this</span>.name);
+  }
+}
+
+People.prototype.walk = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos; is walking&apos;</span>)  
+}
+
+<span class="hljs-keyword">var</span> p1 = <span class="hljs-keyword">new</span> People(<span class="hljs-string">&apos;&#x9965;&#x4EBA;&#x8C37;&apos;</span>)
+<span class="hljs-keyword">var</span> p2 = <span class="hljs-keyword">new</span> People(<span class="hljs-string">&apos;&#x524D;&#x7AEF;&apos;</span>)
+</code></pre>
+<p><img src="https://i.loli.net/2017/07/30/597df4e1347a2.jpg" alt=""></p>
+<h2 id="&#x95EE;&#x9898;5&#xFF1A;-&#x521B;&#x5EFA;&#x4E00;&#x4E2A;-car-&#x5BF9;&#x8C61;&#xFF0C;&#x62E5;&#x6709;&#x5C5E;&#x6027;name&#x3001;color&#x3001;status&#xFF1B;&#x62E5;&#x6709;&#x65B9;&#x6CD5;run&#xFF0C;stop&#xFF0C;getstatus"><strong>&#x95EE;&#x9898;5&#xFF1A;</strong> &#x521B;&#x5EFA;&#x4E00;&#x4E2A; Car &#x5BF9;&#x8C61;&#xFF0C;&#x62E5;&#x6709;&#x5C5E;&#x6027;<code>name</code>&#x3001;<code>color</code>&#x3001;<code>status</code>&#xFF1B;&#x62E5;&#x6709;&#x65B9;&#x6CD5;<code>run</code>&#xFF0C;<code>stop</code>&#xFF0C;<code>getStatus</code></h2>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Car</span> (<span class="hljs-params">name,color,status</span>)</span>{
+  <span class="hljs-keyword">this</span>.name = name
+  <span class="hljs-keyword">this</span>.color = color
+  <span class="hljs-keyword">this</span>.status = status
+}
+
+Car.prototype.run = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;run&apos;</span>)
+}
+Car.prototype.stop = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;stop&apos;</span>)
+}
+Car.prototype.getStatus = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;getStatus&apos;</span>)
+}
+</code></pre>
+<h2 id="&#x95EE;&#x9898;6&#xFF1A;-&#x521B;&#x5EFA;&#x4E00;&#x4E2A;-gotop-&#x5BF9;&#x8C61;&#xFF0C;&#x5F53;-new-&#x4E00;&#x4E2A;-gottop-&#x5BF9;&#x8C61;&#x5219;&#x4F1A;&#x5728;&#x9875;&#x9762;&#x4E0A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x56DE;&#x5230;&#x9876;&#x90E8;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x70B9;&#x51FB;&#x9875;&#x9762;&#x6EDA;&#x52A8;&#x5230;&#x9876;&#x90E8;&#x3002;&#x62E5;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;"><strong>&#x95EE;&#x9898;6&#xFF1A;</strong> &#x521B;&#x5EFA;&#x4E00;&#x4E2A; GoTop &#x5BF9;&#x8C61;&#xFF0C;&#x5F53; new &#x4E00;&#x4E2A; GotTop &#x5BF9;&#x8C61;&#x5219;&#x4F1A;&#x5728;&#x9875;&#x9762;&#x4E0A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x56DE;&#x5230;&#x9876;&#x90E8;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x70B9;&#x51FB;&#x9875;&#x9762;&#x6EDA;&#x52A8;&#x5230;&#x9876;&#x90E8;&#x3002;&#x62E5;&#x6709;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</h2>
+<pre><code>1. `ct`&#x5C5E;&#x6027;&#xFF0C;GoTop &#x5BF9;&#x5E94;&#x7684; DOM &#x5143;&#x7D20;&#x7684;&#x5BB9;&#x5668;
+2.  `target`&#x5C5E;&#x6027;&#xFF0C; GoTop &#x5BF9;&#x5E94;&#x7684; DOM &#x5143;&#x7D20;
+3.  `bindEvent` &#x65B9;&#x6CD5;&#xFF0C; &#x7528;&#x4E8E;&#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;
+4 `createNode` &#x65B9;&#x6CD5;&#xFF0C; &#x7528;&#x4E8E;&#x5728;&#x5BB9;&#x5668;&#x5185;&#x521B;&#x5EFA;&#x8282;&#x70B9;
+</code></pre><p><a href="https://jsbin.com/fadidesivi/1/edit?html,output" target="_blank">JS Bin</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 高级">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Q2.html" class="navigation navigation-next " aria-label="Next page: this、原型链、继承">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"JS 面向对象、原型","level":"1.4.1","depth":2,"next":{"title":"this、原型链、继承","level":"1.4.2","depth":2,"path":"advanced/Q2.md","ref":"advanced/Q2.md","articles":[]},"previous":{"title":"高级","level":"1.4","depth":1,"path":"advanced/README.md","ref":"advanced/README.md","articles":[{"title":"JS 面向对象、原型","level":"1.4.1","depth":2,"path":"advanced/Q1.md","ref":"advanced/Q1.md","articles":[]},{"title":"this、原型链、继承","level":"1.4.2","depth":2,"path":"advanced/Q2.md","ref":"advanced/Q2.md","articles":[]},{"title":"模块化","level":"1.4.3","depth":2,"path":"advanced/Q3.md","ref":"advanced/Q3.md","articles":[]},{"title":"前端工程化","level":"1.4.4","depth":2,"path":"advanced/Q4.md","ref":"advanced/Q4.md","articles":[]},{"title":"常见设计模式","level":"1.4.5","depth":2,"path":"advanced/Q5.md","ref":"advanced/Q5.md","articles":[]},{"title":"HTML5 CSS3","level":"1.4.6","depth":2,"path":"advanced/Q6.md","ref":"advanced/Q6.md","articles":[]},{"title":"媒体查询 栅格系统","level":"1.4.7","depth":2,"path":"advanced/Q7.md","ref":"advanced/Q7.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"advanced/Q1.md","mtime":"2018-01-21T16:46:29.339Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-21T17:01:03.853Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

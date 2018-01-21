@@ -1,6 +1,6 @@
 # front-end
 
-> 前端的笔记，自家用
+> 把一些陈年压箱底的前端笔记搬出来，自家用。
 
 [点击这里查看](https://frankietang.gitbooks.io/front-end/)
 

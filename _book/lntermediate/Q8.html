@@ -1,0 +1,807 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DOM 的元素选取、增删改查、属性操作 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Q9.html" />
+    
+    
+    <link rel="prev" href="Q7.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../beginner/">
+            
+                <a href="../beginner/">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../beginner/Q1.html">
+            
+                <a href="../beginner/Q1.html">
+            
+                    
+                    Linux 命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../beginner/Q2.html">
+            
+                <a href="../beginner/Q2.html">
+            
+                    
+                    Git 与 GitHub 的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../beginner/Q3.html">
+            
+                <a href="../beginner/Q3.html">
+            
+                    
+                    HTML 标签介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../beginner/Q4.html">
+            
+                <a href="../beginner/Q4.html">
+            
+                    
+                    Form 表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../beginner/Q5.html">
+            
+                <a href="../beginner/Q5.html">
+            
+                    
+                    CSS 是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../beginner/Q6.html">
+            
+                <a href="../beginner/Q6.html">
+            
+                    
+                    CSS 选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../beginner/Q7.html">
+            
+                <a href="../beginner/Q7.html">
+            
+                    
+                    CSS 常见样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../beginner/Q8.html">
+            
+                <a href="../beginner/Q8.html">
+            
+                    
+                    CSS 背景、行高、盒模型、字体图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../beginner/Q9.html">
+            
+                <a href="../beginner/Q9.html">
+            
+                    
+                    浮动、定位、BFC、边距合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../beginner/Q10.html">
+            
+                <a href="../beginner/Q10.html">
+            
+                    
+                    CSS 单栏、双栏、三栏、圣杯、双飞翼布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../beginner/Q11.html">
+            
+                <a href="../beginner/Q11.html">
+            
+                    
+                    浏览器兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../beginner/Q12.html">
+            
+                <a href="../beginner/Q12.html">
+            
+                    
+                    CSS 编码规范、垂直居中、伪类和伪元素系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    进阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Q1.html">
+            
+                <a href="Q1.html">
+            
+                    
+                    浏览器如何渲染页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Q2.html">
+            
+                <a href="Q2.html">
+            
+                    
+                    JS 运算符、运算符优先级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Q3.html">
+            
+                <a href="Q3.html">
+            
+                    
+                    JS 函数声明、函数表达式、声明前置、作用域、作用域链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Q4.html">
+            
+                <a href="Q4.html">
+            
+                    
+                    JS 引用类型、对象深拷贝和浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Q5.html">
+            
+                <a href="Q5.html">
+            
+                    
+                    JS 字符串，JSON 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Q6.html">
+            
+                <a href="Q6.html">
+            
+                    
+                    JS 数组、Math 对象、日期函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Q7.html">
+            
+                <a href="Q7.html">
+            
+                    
+                    JS 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.8" data-path="Q8.html">
+            
+                <a href="Q8.html">
+            
+                    
+                    DOM 的元素选取、增删改查、属性操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="Q9.html">
+            
+                <a href="Q9.html">
+            
+                    
+                    事件模型、事件冒泡、事件捕获、事件代理、阻止默认事件、事件兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="Q10.html">
+            
+                <a href="Q10.html">
+            
+                    
+                    闭包、定时器的使用、BOM 相关 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="Q11.html">
+            
+                <a href="Q11.html">
+            
+                    
+                    ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="Q12.html">
+            
+                <a href="Q12.html">
+            
+                    
+                    跨域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="Q13.html">
+            
+                <a href="Q13.html">
+            
+                    
+                    jQuery选择器、Dom操作、样式、事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="Q14.html">
+            
+                <a href="Q14.html">
+            
+                    
+                    Query常见操作、jQuery ajax使用、jQuery 源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../advanced/">
+            
+                <a href="../advanced/">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../advanced/Q1.html">
+            
+                <a href="../advanced/Q1.html">
+            
+                    
+                    JS 面向对象、原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../advanced/Q2.html">
+            
+                <a href="../advanced/Q2.html">
+            
+                    
+                    this、原型链、继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../advanced/Q3.html">
+            
+                <a href="../advanced/Q3.html">
+            
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../advanced/Q4.html">
+            
+                <a href="../advanced/Q4.html">
+            
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../advanced/Q5.html">
+            
+                <a href="../advanced/Q5.html">
+            
+                    
+                    常见设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../advanced/Q6.html">
+            
+                <a href="../advanced/Q6.html">
+            
+                    
+                    HTML5 CSS3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../advanced/Q7.html">
+            
+                <a href="../advanced/Q7.html">
+            
+                    
+                    媒体查询 栅格系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >DOM 的元素选取、增删改查、属性操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="dom-&#x7684;&#x5143;&#x7D20;&#x9009;&#x53D6;&#x3001;&#x589E;&#x5220;&#x6539;&#x67E5;&#x3001;&#x5C5E;&#x6027;&#x64CD;&#x4F5C;">DOM &#x7684;&#x5143;&#x7D20;&#x9009;&#x53D6;&#x3001;&#x589E;&#x5220;&#x6539;&#x67E5;&#x3001;&#x5C5E;&#x6027;&#x64CD;&#x4F5C;</h1>
+<h2 id="&#x9898;&#x76EE;1&#xFF1A;-dom&#x5BF9;&#x8C61;&#x7684;innertext&#x548C;innerhtml&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;"><strong>&#x9898;&#x76EE;1&#xFF1A;</strong> dom&#x5BF9;&#x8C61;&#x7684;<code>innerText</code>&#x548C;<code>innerHTML</code>&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;</h2>
+<p>element.innerText : &#x83B7;&#x53D6;&#x7684;&#x662F;&#x9875;&#x9762;&#x5143;&#x7D20;&#x663E;&#x793A;&#x7684;&#x6587;&#x672C;</p>
+<p>element.innerHTML : &#x83B7;&#x53D6;&#x7684;&#x662F;&#x5143;&#x7D20;&#x4E2D;&#x95F4;&#x7684; HTML &#x6E90;&#x7801;</p>
+<blockquote>
+<p><strong>innerHTML</strong> &#x6307;&#x7684;&#x662F;<strong>&#x4ECE;&#x5BF9;&#x8C61;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x5230;&#x7EC8;&#x6B62;&#x4F4D;&#x7F6E;&#x7684;&#x5168;&#x90E8;&#x5185;&#x5BB9;,&#x5305;&#x62EC;Html&#x6807;&#x7B7E;</strong>&#x3002;
+<strong>innerText</strong> &#x6307;&#x7684;&#x662F;<strong>&#x4ECE;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x5230;&#x7EC8;&#x6B62;&#x4F4D;&#x7F6E;&#x7684;&#x5185;&#x5BB9;,&#x4F46;&#x5B83;&#x53BB;&#x9664;Html&#x6807;&#x7B7E;</strong>&#x3002;
+&#x540C;&#x65F6;&#xFF0C;innerHTML &#x662F;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;&#x90FD;&#x652F;&#x6301;&#x7684;&#xFF0C;innerText &#x662F;IE&#x6D4F;&#x89C8;&#x5668;&#x548C;chrome &#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#x7684;&#xFF0C;Firefox&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x652F;&#x6301;&#x3002;&#x5176;&#x5B9E;&#xFF0C;innerHTML &#x662F;W3C &#x7EC4;&#x7EC7;&#x89C4;&#x5B9A;&#x7684;&#x5C5E;&#x6027;&#xFF1B;&#x800C;innerText &#x5C5E;&#x6027;&#x662F;IE&#x6D4F;&#x89C8;&#x5668;&#x81EA;&#x5DF1;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x4E0D;&#x8FC7;&#x540E;&#x6765;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x90E8;&#x5206;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x7F62;&#x4E86;&#x3002;</p>
+</blockquote>
+<p><img src="https://ooo.0o0.ooo/2017/06/12/593e8044b4bd0.png" alt=""></p>
+<p><a href="http://blog.csdn.net/magi1201/article/details/44131361" target="_blank">&#x53C2;&#x8003;&#x6587;&#x7AE0;</a></p>
+<h2 id="&#x9898;&#x76EE;2&#xFF1A;-elemchildren&#x548C;elemchildnodes&#x7684;&#x533A;&#x522B;&#xFF1F;"><strong>&#x9898;&#x76EE;2&#xFF1A;</strong> <code>elem.children</code>&#x548C;<code>elem.childNodes</code>&#x7684;&#x533A;&#x522B;&#xFF1F;</h2>
+<p>element.children&#x53EA;&#x8F93;&#x51FA;&#x666E;&#x901A;&#x7684;DOM&#x5143;&#x7D20;&#xFF1B;</p>
+<p>element.childNodes&#x4F1A;&#x8F93;&#x51FA;&#x6240;&#x6709;&#x7684;&#x5B50;&#x5143;&#x7D20;&#xFF0C;&#x5305;&#x62EC;&#x6587;&#x672C;&#x8282;&#x70B9;&#x3001;&#x6587;&#x5B57;&#xFF1B;</p>
+<p>&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;element.children&#xFF1B;</p>
+<p>&#x6817;&#x5B50;&#xFF1A;</p>
+<pre><code class="lang-html">  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;one&quot;</span>&gt;</span>111
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>1111111111111<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>111
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p><img src="https://ooo.0o0.ooo/2017/06/12/593e88d8f25f8.png" alt=""></p>
+<h2 id="&#x9898;&#x76EE;3&#xFF1A;&#x67E5;&#x8BE2;&#x5143;&#x7D20;&#x6709;&#x51E0;&#x79CD;&#x5E38;&#x89C1;&#x7684;&#x65B9;&#x6CD5;&#xFF1F;es5&#x7684;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x65B9;&#x6CD5;&#x662F;&#x4EC0;&#x4E48;"><strong>&#x9898;&#x76EE;3&#xFF1A;</strong>&#x67E5;&#x8BE2;&#x5143;&#x7D20;&#x6709;&#x51E0;&#x79CD;&#x5E38;&#x89C1;&#x7684;&#x65B9;&#x6CD5;&#xFF1F;ES5&#x7684;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x65B9;&#x6CD5;&#x662F;&#x4EC0;&#x4E48;?</h2>
+<p>&#x5E38;&#x89C1;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/getElementById" target="_blank">document.getElementById()</a> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x7279;&#x5B9A; <a href="https://developer.mozilla.org/en-US/docs/DOM/element.id" target="_blank">ID</a>&#x7684;&#x5143;&#x7D20;.</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/getElementsByClassName" target="_blank">document.getElementsByClassName()</a> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x6570;&#x7EC4;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x6307;&#x5B9A; class &#x540D;&#x79F0;&#x7684;&#x5B50;&#x5143;&#x7D20;&#x3002;</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/getElementsByTagName" target="_blank">document.getElementsByTagName()</a> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x62EC;&#x6240;&#x6709;&#x7ED9;&#x5B9A;&#x6807;&#x7B7E;&#x540D;&#x79F0;&#x7684;&#x5143;&#x7D20;&#x7684;HTML&#x96C6;&#x5408;<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLCollection" target="_blank"><code>HTMLCollection</code></a>&#x3002; &#x6574;&#x4E2A;&#x6587;&#x4EF6;&#x7ED3;&#x6784;&#x90FD;&#x4F1A;&#x88AB;&#x641C;&#x7D22;&#xFF0C;&#x5305;&#x62EC;&#x6839;&#x8282;&#x70B9;&#x3002;</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/getElementsByName" target="_blank">document.getElementsByName()</a> &#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/name" target="_blank"><code>name</code></a> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5728; (X)HTML document&#x7684;&#x8282;&#x70B9;&#x5217;&#x8868;&#x96C6;&#x5408;&#x3002;</p>
+<p>ES5&#x7684;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x65B9;&#x6CD5;</p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/querySelector" target="_blank">document.querySelector()</a> &#x8FD4;&#x56DE;&#x6587;&#x6863;&#x4E2D;&#x5339;&#x914D;&#x6307;&#x5B9A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x7EC4;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;(&#x4F7F;&#x7528;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x5148;&#x5E8F;&#x904D;&#x5386;&#x6587;&#x6863;&#x7684;&#x8282;&#x70B9; | &#x5E76;&#x4E14;&#x901A;&#x8FC7;&#x6587;&#x6863;&#x6807;&#x8BB0;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5E76;&#x6309;&#x7167;&#x5B50;&#x8282;&#x70B9;&#x6570;&#x91CF;&#x7684;&#x987A;&#x5E8F;&#x8FED;&#x4EE3;&#x987A;&#x5E8F;&#x8282;&#x70B9;)&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;&#x9009;&#x62E9;&#x65B9;&#x5F0F;</p>
+<p>&#x8FD9;&#x4E2A;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x4F60;&#x5C06;&#x611F;&#x53D7;&#x5230;selectors&#x7684;&#x5F3A;&#x5927;&#x3002;&#x4F8B;&#x5B50;&#x5C06;&#x8FD4;&#x56DE;<code>&lt;div class=&quot;user-panel main&quot;&gt;&#x6807;&#x7B7E;&#x4E2D;&#x7684;``&lt;input name=&quot;login&quot;/&gt;&#x6807;&#x7B7E;&#x3002;</code></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;user-panel main&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;login&quot;</span>/&gt;</span> //&#x8FD9;&#x4E2A;&#x6807;&#x7B7E;&#x5C06;&#x88AB;&#x8FD4;&#x56DE;
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+    <span class="hljs-keyword">var</span> el = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;div.user-panel.main input[name=login]&quot;</span>);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/querySelectorAll" target="_blank">document.querySelectorAll</a> &#x8FD4;&#x56DE;&#x4E0E;&#x6307;&#x5B9A;&#x7684;&#x9009;&#x62E9;&#x5668;&#x7EC4;&#x5339;&#x914D;&#x7684;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x5217;&#x8868; (&#x4F7F;&#x7528;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x7684;&#x5148;&#x5E8F;&#x904D;&#x5386;&#x6587;&#x6863;&#x7684;&#x8282;&#x70B9;)&#x3002;&#x8FD4;&#x56DE;&#x7684;&#x5BF9;&#x8C61;&#x662F; <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/NodeList" target="_blank"><code>NodeList</code></a> &#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6587;&#x6863;&#x4E2D;&#x6240;&#x6709;&#x7684;class&#x4E3A;&quot;<code>note</code>&quot;&#x6216;&#x8005; &quot;<code>alert</code>&quot;&#x7684;<code>div</code>&#x5143;&#x7D20;.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> matches = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&quot;div.note, div.alert&quot;</span>);
+</code></pre>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/elementFromPoint" target="_blank">document.elementFromPoint()</a> &#x8FD4;&#x56DE;&#x5F53;&#x524D;&#x6587;&#x6863;&#x4E0A;&#x5904;&#x4E8E;&#x6307;&#x5B9A;&#x5750;&#x6807;&#x4F4D;&#x7F6E;&#x6700;&#x9876;&#x5C42;&#x7684;&#x5143;&#x7D20;, &#x5750;&#x6807;&#x662F;&#x76F8;&#x5BF9;&#x4E8E;&#x5305;&#x542B;&#x8BE5;&#x6587;&#x6863;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x7A97;&#x53E3;&#x7684;&#x5DE6;&#x4E0A;&#x89D2;&#x4E3A;&#x539F;&#x70B9;&#x6765;&#x8BA1;&#x7B97;&#x7684;, &#x901A;&#x5E38; x &#x548C; y &#x5750;&#x6807;&#x90FD;&#x5E94;&#x4E3A;&#x6B63;&#x6570;.</p>
+<p>&#x8FD9;&#x4E2A;&#x5148;&#x653E;&#x7740;&#x3002;&#x3002;&#x3002;get&#x4E0D;&#x5230;elementFromPoint()&#x7684;&#x7528;&#x6CD5;&#x3002;&#x3002;&#x3002;</p>
+<p><a href="https://miss.cat/elementfrompoint/" target="_blank">&#x4EE3;&#x66FF; touchenter &#x7684; elementFromPoint() &#x5927;&#x6CD5;</a></p>
+<p><a href="http://blog.allenm.me/2010/05/elementfrompoint-%E5%87%BD%E6%95%B0/" target="_blank">elementFromPoint() &#x51FD;&#x6570;</a></p>
+<h2 id="&#x9898;&#x76EE;4&#xFF1A;&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF1F;&#x5982;&#x4F55;&#x7ED9;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#xFF1F;&#x5982;&#x4F55;&#x5220;&#x9664;&#x5C5E;&#x6027;"><strong>&#x9898;&#x76EE;4&#xFF1A;</strong>&#x5982;&#x4F55;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF1F;&#x5982;&#x4F55;&#x7ED9;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#xFF1F;&#x5982;&#x4F55;&#x5220;&#x9664;&#x5C5E;&#x6027;</h2>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5143;&#x7D20; <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Document/createElement" target="_blank">document.createElement()</a></p>
+<p>&#x5143;&#x7D20;&#x8BBE;&#x7F6E;&#x5C5E;&#x6027; <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/setAttribute" target="_blank">element.setAttribute()</a></p>
+<p>&#x5220;&#x9664;&#x5C5E;&#x6027; <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/removeAttribute" target="_blank">element.removeAttribute()</a></p>
+<p><img src="https://ooo.0o0.ooo/2017/06/12/593ea0ce59ae9.png" alt=""></p>
+<h2 id="&#x9898;&#x76EE;5&#xFF1A;&#x5982;&#x4F55;&#x7ED9;&#x9875;&#x9762;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5B50;&#x5143;&#x7D20;&#xFF1F;&#x5982;&#x4F55;&#x5220;&#x9664;&#x9875;&#x9762;&#x5143;&#x7D20;&#x4E0B;&#x7684;&#x5B50;&#x5143;&#x7D20;"><strong>&#x9898;&#x76EE;5&#xFF1A;</strong>&#x5982;&#x4F55;&#x7ED9;&#x9875;&#x9762;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x5B50;&#x5143;&#x7D20;&#xFF1F;&#x5982;&#x4F55;&#x5220;&#x9664;&#x9875;&#x9762;&#x5143;&#x7D20;&#x4E0B;&#x7684;&#x5B50;&#x5143;&#x7D20;?</h2>
+<p>&#x5982;&#x56FE;&#xFF1A;</p>
+<p><img src="https://ooo.0o0.ooo/2017/06/12/593ea575a481c.png" alt=""></p>
+<p><img src="https://ooo.0o0.ooo/2017/06/12/593ea8132525b.png" alt=""></p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Node/removeChild" target="_blank">removeChild()</a></p>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Node/appendChild" target="_blank">appendChild()</a></p>
+<h2 id="&#x9898;&#x76EE;6&#xFF1A;-elementclasslist&#x6709;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#xFF1F;&#x5982;&#x4F55;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;-class-&#x5217;&#x8868;&#x4E2D;&#x662F;&#x5305;&#x542B;&#x67D0;&#x4E2A;-class&#xFF1F;&#x5982;&#x4F55;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;class&#xFF1F;&#x5982;&#x4F55;&#x5220;&#x9664;&#x4E00;&#x4E2A;class"><strong>&#x9898;&#x76EE;6&#xFF1A;</strong> <code>element.classList</code>&#x6709;&#x54EA;&#x4E9B;&#x65B9;&#x6CD5;&#xFF1F;&#x5982;&#x4F55;&#x5224;&#x65AD;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684; class &#x5217;&#x8868;&#x4E2D;&#x662F;&#x5305;&#x542B;&#x67D0;&#x4E2A; class&#xFF1F;&#x5982;&#x4F55;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;class&#xFF1F;&#x5982;&#x4F55;&#x5220;&#x9664;&#x4E00;&#x4E2A;class?</h2>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Element/classList" target="_blank">Element.classList</a></p>
+<p><img src="https://ooo.0o0.ooo/2017/06/12/593eaf3e178f0.png" alt=""></p>
+<p><strong>&#x9898;&#x76EE;7&#xFF1A;</strong> &#x5982;&#x4F55;&#x9009;&#x4E2D;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#x6240;&#x6709;&#x7684;<code>li</code>&#x5143;&#x7D20;&#xFF1F; &#x5982;&#x4F55;&#x9009;&#x4E2D;<code>btn</code>&#x5143;&#x7D20;&#xFF1F;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;mod-tabs&quot;</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list2<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>list3<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn&quot;</span>&gt;</span>&#x70B9;&#x6211;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-comment">//li</span>
+<span class="hljs-keyword">var</span> li = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&apos;li&apos;</span>);
+<span class="hljs-built_in">console</span>.log(li);
+<span class="hljs-keyword">var</span> li1 = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&apos;li&apos;</span>);
+<span class="hljs-built_in">console</span>.log(li);
+<span class="hljs-comment">//btn</span>
+<span class="hljs-keyword">var</span> btn = <span class="hljs-built_in">document</span>.getElementsByTagName(<span class="hljs-string">&quot;button&quot;</span>)[<span class="hljs-number">0</span>];
+<span class="hljs-built_in">console</span>.log(btn);
+<span class="hljs-keyword">var</span> btn1 = <span class="hljs-built_in">document</span>.getElementsByClassName(<span class="hljs-string">&quot;btn&quot;</span>)[<span class="hljs-number">0</span>];
+<span class="hljs-built_in">console</span>.log(btn1);
+<span class="hljs-keyword">var</span> btn2 = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;.btn&quot;</span>);
+<span class="hljs-built_in">console</span>.log(btn2);
+<span class="hljs-keyword">var</span> btn3 = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&quot;.btn&quot;</span>)[<span class="hljs-number">0</span>];
+<span class="hljs-built_in">console</span>.log(btn3);
+</code></pre>
+<p><img src="https://ooo.0o0.ooo/2017/06/12/593eb1ac2cf8a.png" alt="">
+<img src="https://ooo.0o0.ooo/2017/06/12/593eb1ac384ab.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Q7.html" class="navigation navigation-prev " aria-label="Previous page: JS 正则表达式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Q9.html" class="navigation navigation-next " aria-label="Next page: 事件模型、事件冒泡、事件捕获、事件代理、阻止默认事件、事件兼容">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DOM 的元素选取、增删改查、属性操作","level":"1.3.8","depth":2,"next":{"title":"事件模型、事件冒泡、事件捕获、事件代理、阻止默认事件、事件兼容","level":"1.3.9","depth":2,"path":"lntermediate/Q9.md","ref":"lntermediate/Q9.md","articles":[]},"previous":{"title":"JS 正则表达式","level":"1.3.7","depth":2,"path":"lntermediate/Q7.md","ref":"lntermediate/Q7.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lntermediate/Q8.md","mtime":"2018-01-21T16:26:11.212Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-21T17:01:03.853Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

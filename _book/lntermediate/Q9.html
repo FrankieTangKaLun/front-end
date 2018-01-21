@@ -1,0 +1,853 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>事件模型、事件冒泡、事件捕获、事件代理、阻止默认事件、事件兼容 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Q10.html" />
+    
+    
+    <link rel="prev" href="Q8.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../beginner/">
+            
+                <a href="../beginner/">
+            
+                    
+                    入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../beginner/Q1.html">
+            
+                <a href="../beginner/Q1.html">
+            
+                    
+                    Linux 命令行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../beginner/Q2.html">
+            
+                <a href="../beginner/Q2.html">
+            
+                    
+                    Git 与 GitHub 的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../beginner/Q3.html">
+            
+                <a href="../beginner/Q3.html">
+            
+                    
+                    HTML 标签介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../beginner/Q4.html">
+            
+                <a href="../beginner/Q4.html">
+            
+                    
+                    Form 表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../beginner/Q5.html">
+            
+                <a href="../beginner/Q5.html">
+            
+                    
+                    CSS 是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../beginner/Q6.html">
+            
+                <a href="../beginner/Q6.html">
+            
+                    
+                    CSS 选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../beginner/Q7.html">
+            
+                <a href="../beginner/Q7.html">
+            
+                    
+                    CSS 常见样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../beginner/Q8.html">
+            
+                <a href="../beginner/Q8.html">
+            
+                    
+                    CSS 背景、行高、盒模型、字体图标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../beginner/Q9.html">
+            
+                <a href="../beginner/Q9.html">
+            
+                    
+                    浮动、定位、BFC、边距合并
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.10" data-path="../beginner/Q10.html">
+            
+                <a href="../beginner/Q10.html">
+            
+                    
+                    CSS 单栏、双栏、三栏、圣杯、双飞翼布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../beginner/Q11.html">
+            
+                <a href="../beginner/Q11.html">
+            
+                    
+                    浏览器兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../beginner/Q12.html">
+            
+                <a href="../beginner/Q12.html">
+            
+                    
+                    CSS 编码规范、垂直居中、伪类和伪元素系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    进阶
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Q1.html">
+            
+                <a href="Q1.html">
+            
+                    
+                    浏览器如何渲染页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="Q2.html">
+            
+                <a href="Q2.html">
+            
+                    
+                    JS 运算符、运算符优先级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="Q3.html">
+            
+                <a href="Q3.html">
+            
+                    
+                    JS 函数声明、函数表达式、声明前置、作用域、作用域链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="Q4.html">
+            
+                <a href="Q4.html">
+            
+                    
+                    JS 引用类型、对象深拷贝和浅拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Q5.html">
+            
+                <a href="Q5.html">
+            
+                    
+                    JS 字符串，JSON 对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Q6.html">
+            
+                <a href="Q6.html">
+            
+                    
+                    JS 数组、Math 对象、日期函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Q7.html">
+            
+                <a href="Q7.html">
+            
+                    
+                    JS 正则表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="Q8.html">
+            
+                <a href="Q8.html">
+            
+                    
+                    DOM 的元素选取、增删改查、属性操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.9" data-path="Q9.html">
+            
+                <a href="Q9.html">
+            
+                    
+                    事件模型、事件冒泡、事件捕获、事件代理、阻止默认事件、事件兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="Q10.html">
+            
+                <a href="Q10.html">
+            
+                    
+                    闭包、定时器的使用、BOM 相关 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="Q11.html">
+            
+                <a href="Q11.html">
+            
+                    
+                    ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="Q12.html">
+            
+                <a href="Q12.html">
+            
+                    
+                    跨域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="Q13.html">
+            
+                <a href="Q13.html">
+            
+                    
+                    jQuery选择器、Dom操作、样式、事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="Q14.html">
+            
+                <a href="Q14.html">
+            
+                    
+                    Query常见操作、jQuery ajax使用、jQuery 源码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../advanced/">
+            
+                <a href="../advanced/">
+            
+                    
+                    高级
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../advanced/Q1.html">
+            
+                <a href="../advanced/Q1.html">
+            
+                    
+                    JS 面向对象、原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../advanced/Q2.html">
+            
+                <a href="../advanced/Q2.html">
+            
+                    
+                    this、原型链、继承
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../advanced/Q3.html">
+            
+                <a href="../advanced/Q3.html">
+            
+                    
+                    模块化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../advanced/Q4.html">
+            
+                <a href="../advanced/Q4.html">
+            
+                    
+                    前端工程化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../advanced/Q5.html">
+            
+                <a href="../advanced/Q5.html">
+            
+                    
+                    常见设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../advanced/Q6.html">
+            
+                <a href="../advanced/Q6.html">
+            
+                    
+                    HTML5 CSS3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../advanced/Q7.html">
+            
+                <a href="../advanced/Q7.html">
+            
+                    
+                    媒体查询 栅格系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >事件模型、事件冒泡、事件捕获、事件代理、阻止默认事件、事件兼容</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4E8B;&#x4EF6;&#x6A21;&#x578B;&#x3001;&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#x3001;&#x4E8B;&#x4EF6;&#x6355;&#x83B7;&#x3001;&#x4E8B;&#x4EF6;&#x4EE3;&#x7406;&#x3001;&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x4E8B;&#x4EF6;&#x3001;&#x4E8B;&#x4EF6;&#x517C;&#x5BB9;">&#x4E8B;&#x4EF6;&#x6A21;&#x578B;&#x3001;&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#x3001;&#x4E8B;&#x4EF6;&#x6355;&#x83B7;&#x3001;&#x4E8B;&#x4EF6;&#x4EE3;&#x7406;&#x3001;&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x4E8B;&#x4EF6;&#x3001;&#x4E8B;&#x4EF6;&#x517C;&#x5BB9;</h1>
+<h2 id="&#x9898;&#x76EE;1&#xFF1A;-dom0-&#x4E8B;&#x4EF6;&#x548C;dom2&#x7EA7;&#x5728;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x4E0A;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;"><strong>&#x9898;&#x76EE;1&#xFF1A;</strong> DOM0 &#x4E8B;&#x4EF6;&#x548C;DOM2&#x7EA7;&#x5728;&#x4E8B;&#x4EF6;&#x76D1;&#x542C;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x4E0A;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;</h2>
+<blockquote>
+<h3 id="1-dom0&#x7EA7;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;">1. <code>DOM0</code>&#x7EA7;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;</h3>
+<p>&#x5728;<code>DOM0</code>&#x7EA7;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x4E8B;&#x4EF6;&#x540D;&#x4EE5;<code>&apos;on&apos;</code>&#x5F00;&#x5934;&#xFF0C;&#x56E0;&#x6B64;<code>click</code>&#x4E8B;&#x4EF6;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x5C31;&#x662F;<code>onclick</code>&#x3001;<code>load</code>&#x4E8B;&#x4EF6;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x5C31;&#x662F;<code>onload</code>&#x3002;</p>
+<h4 id="11-html&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;">1.1 <code>HTML</code>&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;</h4>
+<p>&#x4E00;&#x4E2A;HTML&#x5143;&#x7D20;&#x652F;&#x6301;&#x4E8B;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;HTML&#x5143;&#x7D20;&#x7684;&#x5C5E;&#x6027;&#x6765;&#x6307;&#x5B9A;&#xFF1A;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&#x8FD9;&#x662F;&#x4E2A;&#x6309;&#x94AE;&quot;</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;showMessage()&quot;</span> /&gt;</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;<code>input</code>&#x5BF9;&#x5E94;&#x7684;<code>onclick</code>&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">showMessage</span>(<span class="hljs-params"></span>)</span>{
+   alert(<span class="hljs-string">&apos;itbilu.com&apos;</span>);
+}
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x901A;&#x8FC7;HTML&#x5143;&#x7D20;&#x5C5E;&#x6027;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5C5E;&#x4E8E;<code>DOM0</code>&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x3002;&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x6DFB;&#x52A0;&#x4F1A;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x9EBB;&#x70E6;&#xFF0C;&#x4E2A;&#x662F;HTML&#x4E0E;JavaScript&#x4EE3;&#x7801;&#x7D27;&#x5BC6;&#x8026;&#x5408;&#xFF0C;&#x5BF9;&#x4EE3;&#x7801;&#x4FEE;&#x6539;&#x548C;&#x7EF4;&#x62A4;&#x90FD;&#x9020;&#x6210;&#x4E86;&#x4E0D;&#x4FBF;&#x3002;</p>
+<h4 id="12-&#x901A;&#x8FC7;javascript&#x6DFB;&#x52A0;dom0&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;">1.2 &#x901A;&#x8FC7;JavaScript&#x6DFB;&#x52A0;<code>DOM0</code>&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;</h4>
+<p>&#x8981;&#x4F7F;&#x7528;JavaScript&#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x9996;&#x5148;&#x8981;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x8981;&#x64CD;&#x4F5C;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x5176;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x5C5E;&#x6027;&#xFF08;&#x8FD9;&#x4E9B;&#x5C5E;&#x6027;&#x901A;&#x5E38;&#x5168;&#x90E8;&#x5C0F;&#x5199;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;onclick&#xFF09;&#xFF0C;&#x6307;&#x5B9A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> btn = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;myBtn&quot;</span>);
+btn.onclick = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+   alert(<span class="hljs-string">&apos;itbilu.com&apos;</span>);
+}
+</code></pre>
+<p><code>DOM0</code>&#x7EA7;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5220;&#x9664;<code>DOM0</code>&#x7EA7;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C06;&#x76F8;&#x5E94;&#x5C5E;&#x6027;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;<code>null</code>&#x5373;&#x53EF;&#x3002;</p>
+<pre><code class="lang-javascript">btn.onclick = <span class="hljs-literal">null</span>;
+</code></pre>
+<h3 id="2-dom2&#x7EA7;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;">2. <code>DOM2</code>&#x7EA7;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;</h3>
+<p>&#x5728;<code>W3C</code>&#x5236;&#x5B9A;&#x7684;<code>DOM2</code>&#x89C4;&#x8303;&#x4E2D;&#xFF0C;&#x5176;&#x4E2D;&#x7684;<code>DOM &#x4E8B;&#x4EF6;</code>&#x89C4;&#x8303;&#x5B9A;&#x4E49;&#x4E86;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;<code>addEventListener()</code>&#x548C;<code>removeEventListener()</code>&#xFF0C;&#x5206;&#x522B;&#x7528;&#x4E8E;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x548C;&#x5220;&#x9664;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> btn = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;myBtn&quot;</span>);
+btn.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, showMessage, <span class="hljs-literal">false</span>);
+</code></pre>
+<p>&#x4F7F;&#x7528;<code>DOM2</code>&#x7EA7;&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4E3A;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x591A;&#x4E2A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> btn = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&quot;myBtn&quot;</span>);
+btn.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, showMessage, <span class="hljs-literal">false</span>);
+btn.addEventListener(<span class="hljs-string">&quot;click&quot;</span>, showMessage2, <span class="hljs-literal">false</span>);
+</code></pre>
+<p>&#x5220;&#x9664;<code>DOM2</code>&#x7EA7;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-javascript">btn.removeEventListener(<span class="hljs-string">&quot;click&quot;</span>, showMessage, <span class="hljs-literal">false</span>);
+</code></pre>
+</blockquote>
+<p><a href="https://itbilu.com/javascript/js/Vy1jsXqJg.html" target="_blank">&#x53C2;&#x8003;&#x6587;&#x7AE0;</a></p>
+<h2 id="&#x9898;&#x76EE;2&#xFF1A;-attachevent&#x4E0E;addeventlistener&#x7684;&#x533A;&#x522B;&#xFF1F;"><strong>&#x9898;&#x76EE;2&#xFF1A;</strong> <code>attachEvent</code>&#x4E0E;<code>addEventListener</code>&#x7684;&#x533A;&#x522B;&#xFF1F;</h2>
+<blockquote>
+<ul>
+<li><p><strong>&#x652F;&#x6301;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x540C;&#x3002;attachEvent&#x5728;IE9&#x4EE5;&#x4E0B;&#x7684;&#x7248;&#x672C;&#x4E2D;&#x53D7;&#x5230;&#x652F;&#x6301;&#x3002;&#x5176;&#x5B83;&#x7684;&#x90FD;&#x652F;&#x6301;addEventListener&#x3002;</strong></p>
+</li>
+<li><p><strong>&#x53C2;&#x6570;&#x4E0D;&#x540C;&#x3002;addEventListener&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x6355;&#x83B7;&#xFF0C;&#x800C;attachEvent&#x4E0D;&#x652F;&#x6301;&#x6355;&#x83B7;&#x3002;</strong></p>
+<p>attachEvent&#xFF08;on+&apos;type&apos;,handler&#xFF09;&#x65B9;&#x6CD5;&#x63A5;&#x6536;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x53EA;&#x5728;&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#x9636;&#x6BB5;&#x751F;&#x6548;&#xFF1B;&#x800C;addEventListener(type,handler,false/true)&#x65B9;&#x6CD5;&#x63A5;&#x6536;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x9009;&#x62E9;&#x8BBE;&#x7F6E;&#x5728;&#x4E8B;&#x4EF6;&#x6355;&#x83B7;&#x9636;&#x6BB5;&#x751F;&#x6548;&#x6216;&#x5728;&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#x9636;&#x6BB5;&#x751F;&#x6548;&#x3002;</p>
+</li>
+<li><p><strong>&#x4E8B;&#x4EF6;&#x540D;&#x4E0D;&#x540C;&#x3002;attachEvent&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4E8B;&#x4EF6;&#x540D;&#x524D;&#x8981;&#x52A0;on&#xFF0C;&#x6BD4;&#x5982;el.attachEvent(&apos;onclick&apos;, handleClick)&#x3002;</strong></p>
+</li>
+<li><p><strong>this&#x4E0D;&#x540C;&#x3002;</strong></p>
+<p>attachEvent()&#x65B9;&#x6CD5;&#x7684;this&#x6307;&#x7684;&#x662F;&#x5168;&#x5C40;&#x7684;window&#xFF0C;addEventListener()&#x65B9;&#x6CD5;&#x7684;this&#x6307;&#x7684;&#x662F;&#x5143;&#x7D20;&#x5BF9;&#x8C61;&#x3002;</p>
+</li>
+</ul>
+</blockquote>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">bindEvent</span>(<span class="hljs-params">node,type,handler</span>) </span>{
+  <span class="hljs-keyword">if</span>(node.addEventListener) {
+    node.addEventListener(<span class="hljs-string">&apos;type&apos;</span>,handler);
+  } <span class="hljs-keyword">else</span> {
+    node.addEventListener(<span class="hljs-string">&apos;on&apos;</span>+type,handler);
+  }
+}
+</code></pre>
+<p><a href="http://www.cnblogs.com/shytong/p/5105536.html" target="_blank">&#x53C2;&#x8003;&#x6587;&#x7AE0;</a></p>
+<h2 id="&#x9898;&#x76EE;3&#xFF1A;-&#x89E3;&#x91CA;ie&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#x548C;dom2&#x4E8B;&#x4EF6;&#x4F20;&#x64AD;&#x673A;&#x5236;&#xFF1F;"><strong>&#x9898;&#x76EE;3&#xFF1A;</strong> &#x89E3;&#x91CA;IE&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#x548C;DOM2&#x4E8B;&#x4EF6;&#x4F20;&#x64AD;&#x673A;&#x5236;&#xFF1F;</h2>
+<p>IE&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;</p>
+<blockquote>
+<p>&#x5FAE;&#x8F6F;&#x63D0;&#x51FA;&#x4E86;&#x540D;&#x4E3A;<strong>&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;</strong>(event bubbling)&#x7684;&#x4E8B;&#x4EF6;&#x6D41;&#x3002;&#x65F6;&#x95F4;&#x5192;&#x6CE1;&#x5C31;&#x662F;&#x6307;&#x4E8B;&#x4EF6;&#x4F1A;&#x4ECE;&#x6700;&#x5185;&#x5C42;&#x7684;&#x5143;&#x7D20;&#x5F00;&#x59CB;&#x53D1;&#x751F;&#xFF0C;&#x4E00;&#x76F4;&#x5411;&#x4E0A;&#x4F20;&#x64AD;&#xFF0C;&#x76F4;&#x5230;document&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x56E0;&#x6B64;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x5728;&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#x7684;&#x6982;&#x5FF5;&#x4E0B;&#x53D1;&#x751F;click&#x4E8B;&#x4EF6;&#x7684;&#x987A;&#x5E8F;&#x5E94;&#x8BE5;&#x662F;<strong>p -&gt; div -&gt; body -&gt; html -&gt; document</strong></p>
+</blockquote>
+<p>DOM2&#x4E8B;&#x4EF6;&#x4F20;&#x64AD;&#x673A;&#x5236;</p>
+<blockquote>
+<p>&#x7F51;&#x666F;&#x63D0;&#x51FA;&#x53E6;&#x4E00;&#x79CD;&#x4E8B;&#x4EF6;&#x6D41;&#x540D;&#x4E3A;<strong>&#x4E8B;&#x4EF6;&#x6355;&#x83B7;</strong>(event capturing)&#x3002;&#x4E0E;&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#x76F8;&#x53CD;&#xFF0C;&#x4E8B;&#x4EF6;&#x4F1A;&#x4ECE;&#x6700;&#x5916;&#x5C42;&#x5F00;&#x59CB;&#x53D1;&#x751F;&#xFF0C;&#x76F4;&#x5230;&#x6700;&#x5177;&#x4F53;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x5728;&#x4E8B;&#x4EF6;&#x6355;&#x83B7;&#x7684;&#x6982;&#x5FF5;&#x4E0B;&#x53D1;&#x751F;click&#x4E8B;&#x4EF6;&#x7684;&#x987A;&#x5E8F;&#x5E94;&#x8BE5;&#x662F;<strong>document -&gt; html -&gt; body -&gt; div -&gt; p</strong></p>
+<p>Netscape Navigator<strong>&#x4E0D;&#x4F1A;&#x5C06;&#x9875;&#x9762;&#x4E0A;&#x7684;&#x5F88;&#x591A;&#x5143;&#x7D20;&#x66B4;&#x6F0F;&#x7ED9;&#x4E8B;&#x4EF6;</strong></p>
+<p><strong>&#x5728;DOM&#x4E8B;&#x4EF6;&#x6D41;&#x4E2D;&#xFF0C;&#x201C;DOM2&#x7EA7;&#x4E8B;&#x4EF6;&#x201D;&#x4E2D;&#x89C4;&#x5B9A;&#x7684;&#x4E8B;&#x4EF6;&#x6D41;&#x540C;&#x65F6;&#x652F;&#x6301;&#x4E86;&#x4E8B;&#x4EF6;&#x6355;&#x83B7;&#x9636;&#x6BB5;&#x548C;&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#x9636;&#x6BB5;</strong></p>
+</blockquote>
+<p><a href="http://www.cnblogs.com/lpshan/p/4591053.html" target="_blank">&#x53C2;&#x8003;&#x6587;&#x7AE0;</a></p>
+<h2 id="&#x9898;&#x76EE;4&#xFF1A;&#x5982;&#x4F55;&#x963B;&#x6B62;&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#xFF1F;-&#x5982;&#x4F55;&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x4E8B;&#x4EF6;&#xFF1F;"><strong>&#x9898;&#x76EE;4&#xFF1A;</strong>&#x5982;&#x4F55;&#x963B;&#x6B62;&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#xFF1F; &#x5982;&#x4F55;&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x4E8B;&#x4EF6;&#xFF1F;</h2>
+<blockquote>
+<p>&#x963B;&#x6B62;&#x5192;&#x6CE1;</p>
+<p>w3c &#x7684;&#x65B9;&#x6CD5;&#x662F; e.stopPropagation()&#xFF0C;IE &#x5219;&#x662F;&#x4F7F;&#x7528; e.cancelBubble = true</p>
+<p>&#x5728;&#x652F;&#x6301; addEventListener() &#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x7684;&#x4E00;&#x4E2A; stopPropagation() &#x65B9;&#x6CD5;&#x5DF2;&#x963B;&#x6B62;&#x4E8B;&#x4EF6;&#x7684;&#x7EE7;&#x7EED;&#x4F20;&#x64AD;&#x3002;&#x5982;&#x679C;&#x5728;&#x540C;&#x4E00;&#x5BF9;&#x8C61;&#x4E0A;&#x5B9A;&#x4E49;&#x4E86;&#x5176;&#x4ED6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x5269;&#x4E0B;&#x7684;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x5C06;&#x4F9D;&#x65E7;&#x88AB;&#x8C03;&#x7528;&#xFF0C;&#x4F46;&#x8C03;&#x7528; stopPropagation() &#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x5728;&#x4E8B;&#x4EF6;&#x4F20;&#x64AD;&#x671F;&#x95F4;&#x7684;&#x4EFB;&#x4F55;&#x65F6;&#x95F4;&#x8C03;&#x7528;&#xFF0C;&#x5B83;&#x80FD;&#x5DE5;&#x4F5C;&#x5728;&#x6355;&#x83B7;&#x9636;&#x6BB5;&#x3001;&#x4E8B;&#x4EF6;&#x76EE;&#x6807;&#x672C;&#x8EAB;&#x4E2D;&#x548C;&#x5192;&#x6CE1;&#x9636;&#x6BB5;&#x3002;</p>
+<p>IE9 &#x4E4B;&#x524D;&#x7684;IE&#x4E0D;&#x652F;&#x6301; stopPropagation() &#x65B9;&#x6CD5;&#x3002;&#x76F8;&#x53CD;&#xFF0C;IE&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x6709;&#x4E00;&#x4E2A; cancleBubble &#x5C5E;&#x6027;&#xFF0C;&#x8BBE;&#x7F6E;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x4E3A; true &#x80FD;&#x963B;&#x6B62;&#x4E8B;&#x4EF6;&#x8FDB;&#x4E00;&#x6B65;&#x4F20;&#x64AD;&#x3002;&#xFF08; IE8 &#x53CA;&#x4E4B;&#x524D;&#x7248;&#x672C;&#x4E0D;&#x652F;&#x6301;&#x4E8B;&#x4EF6;&#x4F20;&#x64AD;&#x7684;&#x6355;&#x83B7;&#x9636;&#x6BB5;&#xFF0C;&#x6240;&#x4EE5;&#x5192;&#x6CE1;&#x662F;&#x552F;&#x4E00;&#x5F85;&#x53D6;&#x6D88;&#x7684;&#x4E8B;&#x4EF6;&#x4F20;&#x64AD;&#x3002;&#xFF09;</p>
+<p>&#x5F53;&#x524D;&#x7684; DOM &#x4E8B;&#x4EF6;&#x89C4;&#x8303;&#x8349;&#x6848;&#x5728; Event &#x5BF9;&#x8C61;&#x4E0A;&#x5B9A;&#x4E49;&#x4E86;&#x53E6;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#xFF0C;&#x547D;&#x540D;&#x4E3A;stopImmediatePropagation()&#x3002;&#x7C7B;&#x4F3C; stopPropagation(),&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x7EC4;&#x7EC7;&#x4E86;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x5BF9;&#x8C61;&#x7684;&#x4E8B;&#x4EF6;&#x4F20;&#x64AD;&#xFF0C;&#x4F46;&#x4E5F;&#x963B;&#x6B62;&#x4E86;&#x5728;&#x76F8;&#x540C;&#x5BF9;&#x8C61;&#x4E0A;&#x6CE8;&#x518C;&#x7684;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x7684;&#x8C03;&#x7528;&#x3002;</p>
+<p>&#x53D6;&#x6D88;&#x9ED8;&#x8BA4;&#x64CD;&#x4F5C;</p>
+<p>w3c &#x7684;&#x65B9;&#x6CD5;&#x662F; e.preventDefault()&#xFF0C;IE &#x5219;&#x662F;&#x4F7F;&#x7528; e.returnValue = false;</p>
+<p>&#x5728;&#x652F;&#x6301; addEventListener() &#x7684;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x4E5F;&#x80FD;&#x901A;&#x8FC7;&#x8C03;&#x7528;&#x65F6;&#x95F4;&#x5BF9;&#x8C61;&#x7684; preventDefault() &#x65B9;&#x6CD5;&#x53D6;&#x6D88;&#x65F6;&#x95F4;&#x7684;&#x9ED8;&#x8BA4;&#x64CD;&#x4F5C;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x5728; IE9 &#x4E4B;&#x524D;&#x7684; IE &#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x7684; returnValue &#x5C5E;&#x6027;&#x4E3A; false &#x6765;&#x8FBE;&#x5230;&#x540C;&#x6837;&#x7684;&#x6548;&#x679C;&#x3002;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x5047;&#x8BBE;&#x4E00;&#x4E2A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x5B83;&#x4F7F;&#x7528;&#x5168;&#x90E8;&#x7684;&#x4E09;&#x79CD;&#x53D6;&#x6D88;&#x6280;&#x672F;&#xFF1A;</p>
+<p>return false</p>
+<p>javascript &#x7684; return false &#x53EA;&#x4F1A;&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#xFF0C;&#x800C;&#x662F;&#x7528; jQuery &#x7684;&#x8BDD;&#x5219;&#x65E2;&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#x53C8;&#x9632;&#x6B62;&#x5BF9;&#x8C61;&#x5192;&#x6CE1;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x4F7F;&#x7528;&#x539F;&#x751F; JS&#xFF0C;&#x53EA;&#x4F1A;&#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#xFF0C;&#x4E0D;&#x4F1A;&#x505C;&#x6B62;&#x5192;&#x6CE1;</p>
+</blockquote>
+<p><a href="http://wiki.jikexueyuan.com/project/brief-talk-js/event-cancellation-and-prevent-bubbles.html" target="_blank">&#x53C2;&#x8003;&#x6587;&#x7AE0;</a></p>
+<h2 id="&#x9898;&#x76EE;5&#xFF1A;&#x6709;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF0C;&#x8981;&#x6C42;&#x5F53;&#x70B9;&#x51FB;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;li&#x65F6;&#x63A7;&#x5236;&#x53F0;&#x5C55;&#x793A;&#x8BE5;&#x5143;&#x7D20;&#x7684;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3002;&#x4E0D;&#x8003;&#x8651;&#x517C;&#x5BB9;"><strong>&#x9898;&#x76EE;5&#xFF1A;</strong>&#x6709;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF0C;&#x8981;&#x6C42;&#x5F53;&#x70B9;&#x51FB;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;<code>li</code>&#x65F6;&#x63A7;&#x5236;&#x53F0;&#x5C55;&#x793A;&#x8BE5;&#x5143;&#x7D20;&#x7684;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3002;&#x4E0D;&#x8003;&#x8651;&#x517C;&#x5BB9;</h2>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ct&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>&#x9965;&#x4EBA;&#x8C37;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>&#x524D;&#x7AEF;6&#x73ED;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<span class="hljs-comment">//todo ...</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p><a href="http://jsbin.com/letuxotepa/edit?html,js,output" target="_blank">JS Bin</a></p>
+<h2 id="&#x9898;&#x76EE;6&#xFF1A;-&#x8865;&#x5168;&#x4EE3;&#x7801;&#xFF0C;&#x8981;&#x6C42;&#xFF1A;"><strong>&#x9898;&#x76EE;6&#xFF1A;</strong> &#x8865;&#x5168;&#x4EE3;&#x7801;&#xFF0C;&#x8981;&#x6C42;&#xFF1A;</h2>
+<ul>
+<li>&#x5F53;&#x70B9;&#x51FB;&#x6309;&#x94AE;<code>&#x5F00;&#x5934;&#x6DFB;&#x52A0;&#x65F6;</code>&#x5728;<code>&lt;li&gt;&#x8FD9;&#x91CC;&#x662F;&lt;/li&gt;</code>&#x5143;&#x7D20;&#x524D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x5143;&#x7D20;&#xFF0C;&#x5185;&#x5BB9;&#x4E3A;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x975E;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;&#xFF1B;&#x5F53;&#x70B9;&#x51FB;<code>&#x7ED3;&#x5C3E;&#x6DFB;&#x52A0;</code>&#x65F6;&#x5728;&#x6700;&#x540E;&#x4E00;&#x4E2A; li &#x5143;&#x7D20;&#x540E;&#x6DFB;&#x52A0;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x975E;&#x7A7A;&#x5B57;&#x7B26;&#x4E32;.</li>
+<li>&#x5F53;&#x70B9;&#x51FB;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;<code>li</code>&#x65F6;&#x63A7;&#x5236;&#x53F0;&#x5C55;&#x793A;&#x8BE5;&#x5143;&#x7D20;&#x7684;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3002;</li>
+</ul>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ct&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>&#x8FD9;&#x91CC;&#x662F;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>&#x9965;&#x4EBA;&#x8C37;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>&#x4EFB;&#x52A1;&#x73ED;<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ipt-add-content&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#x6DFB;&#x52A0;&#x5185;&#x5BB9;&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;btn-add-start&quot;</span>&gt;</span>&#x5F00;&#x5934;&#x6DFB;&#x52A0;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;btn-add-end&quot;</span>&gt;</span>&#x7ED3;&#x5C3E;&#x6DFB;&#x52A0;<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<span class="hljs-comment">//&#x4F60;&#x7684;&#x4EE3;&#x7801;</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p><a href="http://jsbin.com/yosejekuzu/1/edit?html,js,output" target="_blank">JS Bin</a></p>
+<h2 id="&#x9898;&#x76EE;7&#xFF1A;-&#x8865;&#x5168;&#x4EE3;&#x7801;&#xFF0C;&#x8981;&#x6C42;&#xFF1A;&#x5F53;&#x9F20;&#x6807;&#x653E;&#x7F6E;&#x5728;li&#x5143;&#x7D20;&#x4E0A;&#xFF0C;&#x4F1A;&#x5728;img-preview&#x91CC;&#x5C55;&#x793A;&#x5F53;&#x524D;li&#x5143;&#x7D20;&#x7684;data-img&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x7247;&#x3002;"><strong>&#x9898;&#x76EE;7&#xFF1A;</strong> &#x8865;&#x5168;&#x4EE3;&#x7801;&#xFF0C;&#x8981;&#x6C42;&#xFF1A;&#x5F53;&#x9F20;&#x6807;&#x653E;&#x7F6E;&#x5728;<code>li</code>&#x5143;&#x7D20;&#x4E0A;&#xFF0C;&#x4F1A;&#x5728;<code>img-preview</code>&#x91CC;&#x5C55;&#x793A;&#x5F53;&#x524D;<code>li</code>&#x5143;&#x7D20;&#x7684;<code>data-img</code>&#x5BF9;&#x5E94;&#x7684;&#x56FE;&#x7247;&#x3002;</h2>
+<pre><code class="lang-javascript">&lt;ul class=&quot;ct&quot;&gt;
+    &lt;li data-img=&quot;1.png&quot;&gt;&#x9F20;&#x6807;&#x653E;&#x7F6E;&#x67E5;&#x770B;&#x56FE;&#x7247;1&lt;/li&gt;
+    &lt;li data-img=&quot;2.png&quot;&gt;&#x9F20;&#x6807;&#x653E;&#x7F6E;&#x67E5;&#x770B;&#x56FE;&#x7247;2&lt;/li&gt;
+    &lt;li data-img=&quot;3.png&quot;&gt;&#x9F20;&#x6807;&#x653E;&#x7F6E;&#x67E5;&#x770B;&#x56FE;&#x7247;3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;img-preview&quot;&gt;&lt;/div&gt;
+&lt;script&gt;
+//&#x4F60;&#x7684;&#x4EE3;&#x7801;
+&lt;/script&gt;
+</code></pre>
+<p><a href="http://jsbin.com/fiwixuciku/1/edit?html,js,output" target="_blank">JS Bin</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Q8.html" class="navigation navigation-prev " aria-label="Previous page: DOM 的元素选取、增删改查、属性操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Q10.html" class="navigation navigation-next " aria-label="Next page: 闭包、定时器的使用、BOM 相关 API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"事件模型、事件冒泡、事件捕获、事件代理、阻止默认事件、事件兼容","level":"1.3.9","depth":2,"next":{"title":"闭包、定时器的使用、BOM 相关 API","level":"1.3.10","depth":2,"path":"lntermediate/Q10.md","ref":"lntermediate/Q10.md","articles":[]},"previous":{"title":"DOM 的元素选取、增删改查、属性操作","level":"1.3.8","depth":2,"path":"lntermediate/Q8.md","ref":"lntermediate/Q8.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"lntermediate/Q9.md","mtime":"2018-01-21T16:28:12.905Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-21T17:01:03.853Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
